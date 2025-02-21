@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial;
+    font-size: 20px;
+}
+
+body {
+    background-color: #DFDCD7;
+    background-image: url('../assets/background-bread.jpg'); /* Añade tu imagen */
+    background-size: cover; /* Cubre toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    min-height: 100vh; /* Altura mínima = 100% del viewport */
+}
+
+.header {
+    /*background-color: #333;*
+    /* disple flex sirve para Salsalchic */
+    display: flex; 
+    /* Pocicion del menu, es decir si esta a la izquierda o derecha o centro 
+    si esta en medio se usa justify-content: center pero tiene que tener un objeto a la izquierda y derecha */
+    justify-content: start;
+    height: 90px;
+    padding: 5px 10px;
+}
+.header .logo {
+    cursor: pointer; /* para dar focus al logo */
+}
+
+.header .logo img {
+    height: 80px;
+    width: 90px;
+    transition: 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+header .nav-links {
+    list-style: none;
+
+}
+.header .nav-links li {
+    display: inline-block; /* para que los elementos se muestren en linea */
+    padding: 0 20px; /* separacion entre elementos */
+    margin-top: 30px;
+}
+/* para darle un efecto al pasar el mouse */
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+.header .nav-links li a {
+    font-size: 700;
+    color: #f4f4f4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* para cambiar el color del texto al pasar el mouse*/
+.header .nav-links li a:hover {
+    color: #d39e0e;
+}
+/* efecto al boton */
+.header .btn button{
+    font-weight: 700;/* para que el texto sea mas grueso */
+    color: #d39e0e;
+    padding: 9px 25px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .btn button:hover {
+    background-color: #d39e0e;
+    color: #f4f4f4;
+    transform: scale(1.1);
+}
